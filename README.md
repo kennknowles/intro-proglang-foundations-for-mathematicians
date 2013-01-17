@@ -1,4 +1,10 @@
-intro-proglang-foundations-for-mathematicians
-=============================================
+An introduction to programming language foundations for non-logician athematicians
+===================================================================================
 
-An introduction to the foundations of programming languages, targeting non-logician mathematicians
+by Kenneth Knowles
+
+Please see `proglang-for-maths.md` for the source document. 
+
+To build other formats:
+
+    `$ make`

@@ -1,0 +1,101 @@
+@import "compass/css3/box";
+
+@import "../fonts/ComputerModern/Serif/cmun-serif.css";
+@import "../fonts/ComputerModern/Typewriter/cmun-typewriter.css";
+
+$normal-font-size: 12pt;
+$normal-baseline: 14pt;
+
+$large-font-size: 14pt;
+$large-baseline: 16pt;
+
+$Large-font-size: 16pt;
+$Large-baseline: 20pt;
+
+$LARGE-font-size: 20pt;
+$LARGE-baseline: 24pt;
+
+body {
+    font-family: "Computer Modern Serif", serif;
+    font-size: $normal-font-size;
+    line-height: $normal-baseline;
+    margin-top: 1in;
+    margin-bottom: 1in;
+    margin-right: auto;
+    margin-left: auto;
+    width: 7in;
+}
+
+h1+p, h2+p, h3+p { text-indent: 0pt; }
+p { 
+    text-indent: 12pt; 
+    text-align: justify;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+em { font-style: italic; }
+ul { list-style-type: disc }
+img { max-width: 100%; }
+
+header {
+    text-align: center;
+    
+    h1 { 
+        font-size: $LARGE-font-size;
+        line-height: $LARGE-baseline;
+        font-weight: bold;
+        margin-bottom: 1em;
+    }
+
+    h2.author {
+        display: inline-block;
+        font-size: $Large-font-size;
+        line-height: $Large-baseline;
+        font-weight: normal;
+        margin: 1em 1em;
+    }
+
+    h3 { 
+        font-size: $Large-font-size;
+        line-height: $Large-baseline;
+        font-weight: normal;
+        margin-bottom: 1em;
+    }
+
+    h4 {
+        font-size: $large-font-size;
+        line-height: $large-baseline;
+        font-weight: normal;
+        margin-bottom: 1em;
+    }
+
+    .authors ul {
+        @include display-box;
+        @include box-pack(center);
+        list-style-type: none;
+        li { 
+            @include box-flex(0); 
+            padding-right: 10pt
+        }
+    }
+
+    section { 
+        text-align: left; 
+        margin-bottom: 1.5em;
+    }
+}
+
+section {
+    h1 {
+        font-weight: bold;
+        font-size: $Large-font-size;
+        line-hight: $Large-baseline;
+        margin-bottom: 0.5em;
+    }
+}
+
+code {
+    font-family: "Computer Modern Typewriter", monospace;
+}
+

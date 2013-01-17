@@ -1,3 +1,23 @@
+
+# Transient built artifacts
+/*.tex
+/*.pdf
+/*.html
+
+# Compass
+.sass-cache
+/stylesheets
+
+# OSX
+.DS_Store
+
+# emacs
+*~
+
+# Vim
+.*.swp
+
+# LaTeX
 *.acn
 *.acr
 *.alg
